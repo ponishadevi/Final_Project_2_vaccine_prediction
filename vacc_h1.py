@@ -45,7 +45,7 @@ with st.sidebar:
 # Dashboard pages
 if select == "Home":
     st.title("Welcome to the Vaccine Usage Analysis and Prediction Dashboard")
-    st.image("H1n1.jpeg", use_column_width=True)
+    st.image("h1n1_5.jpg", use_column_width=True)
     
 
 
@@ -449,8 +449,8 @@ elif select == "Model Predict":
         return [age_numeric, h1n1_worry_numeric, h1n1_awareness_numeric, dr_recc_h1n1_vacc_numeric, is_h1n1_vacc_effective_numeric, is_h1n1_risky_numeric] + [0] * 25
 
     # Load the trained model
-    with open("logistic_regression.pkl", "rb") as file:
-        model = pickle.load(file)
+    with open('DecisionTreeClassifier.pkl', 'rb') as f:
+        loaded_model = pickle.load(f)
 
     # Streamlit interface
     st.title("Predict H1N1 Vaccine Uptake")
@@ -469,7 +469,7 @@ elif select == "Model Predict":
         input_data = preprocess_input(age_bracket, h1n1_worry, h1n1_awareness, dr_recc_h1n1_vacc, is_h1n1_vacc_effective, is_h1n1_risky)
         
         # Make prediction
-        prediction = model.predict([input_data])
+        prediction = loaded_model.predict([input_data])
         
         # Display prediction result
         if prediction[0] == 1:
