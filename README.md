@@ -74,9 +74,9 @@ Develop a predictive model serving API using Flask.
 Create an application for end-users to input features and receive predictions.
 Use Plotly, Streamlit, or Flask for application development.
 
-# Hosting
+## Hosting
 
-- Host the application using free hosting services like [Render][(https://render.com/](https://final-project-2-vaccine-prediction-2.onrender./)) or PythonAnywhere.
+- Host the application using free hosting services like [Render](https://render.com/) or PythonAnywhere.
 - Ensure the application is accessible to end-users.
 
 **Render Link:** [Your Render Link Here]([https://your-render-link.com/](https://final-project-2-vaccine-prediction-2.onrender./))
