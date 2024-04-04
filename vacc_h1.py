@@ -528,7 +528,7 @@ elif select == "Model Predict":
 
     # Predictive modeling insights
     st.write("### Predictive Modeling Insights:")
-    st.write("- **Accuracy**: The model achieved an accuracy of 82% on the test dataset.")
+    st.write("- **Accuracy**: The model achieved an accuracy of 83% on the test dataset.")
     st.write("- **Key Factors**: The most important factors influencing vaccine usage include awareness, perceived effectiveness, and perceived risk.")
 
     # Conclusion
